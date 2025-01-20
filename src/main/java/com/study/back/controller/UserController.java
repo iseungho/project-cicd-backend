@@ -71,6 +71,15 @@ public class UserController {
     }
 
     /**
+     * 테스트용 API
+     * @return
+     */
+    @GetMapping("/test")
+    public ResponseEntity<String> testApi() {
+        return ResponseEntity.ok("API is working");
+    }
+
+    /**
      * 어드민 진입시 체크
      * @return
      */
