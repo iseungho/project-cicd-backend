@@ -38,6 +38,7 @@ jobs:
       # 현재는 skip
       - name: application.properties 동적 생성
         run: |
+          mkdir -p ./src/main/resources
           echo "${{ secrets.APPLICATION_PRO }}" > ./src/main/resources/application.properties
 
       # build 준비
