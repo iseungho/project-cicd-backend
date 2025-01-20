@@ -33,6 +33,7 @@ public class UserService {
         User user = userRepository.findByEmail(email);
         return UserDto.builder()
                 .id(user.getId())
+                .email(user.getEmail())
                 .name(user.getName())
                 .password(user.getPassword())
                 .role(user.getRole())
