@@ -70,7 +70,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         // 일괄 등록
         config.setAllowedOrigins(Arrays.asList(
-                release_ip,     // 리액트 상용 서버 ip 주소
+                "http://13.239.76.147",     // 리액트 상용 서버 ip 주소
                 release_domain, // 리액트 상용 서버 도메인
                 dev_ip          // 리액트 개발 서버 ip 주소
         ));
