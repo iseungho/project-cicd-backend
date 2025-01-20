@@ -67,6 +67,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         String release_ip = env.getProperty("app.release_ip");
         String release_domain = env.getProperty("app.release_domain");
         String dev_ip     = env.getProperty("app.dev_ip");
+        System.out.println(release_ip);
+        System.out.println(release_domain);
+        System.out.println(dev_ip);
         // 일괄 등록
         config.setAllowedOrigins(Arrays.asList(
                 release_ip,     // 리액트 상용 서버 ip 주소
